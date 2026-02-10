@@ -1,0 +1,123 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --bg-color: #f0f2f5;
+    --card-bg: #ffffff;
+    --text-dark: #2d3436;
+    --accent: #6c5ce7;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+header h1 { font-size: 1.2rem; margin: 0; letter-spacing: 1px; }
+header p { font-size: 0.8rem; opacity: 0.7; margin-top: 5px; }
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+.input-group-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #636e72;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.item-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.header-row {
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b2bec3;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.btn-secondary {
+    background: #f1f2f6;
+    border: 1px dashed #6c5ce7;
+    color: #6c5ce7;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.footer-form {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.total-section p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.creator-tag {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color: #95a5a6;
+}
