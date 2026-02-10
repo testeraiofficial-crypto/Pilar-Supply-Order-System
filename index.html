@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order System - Minimarket Bangunan Pilar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MINIMARKET BANGUNAN PILAR</h1>
+            <p>Jl. Sunan Kudus, Gatak, Rukeman, Tamantirto, Bantul, DIY</p>
+        </header>
+
+        <section class="card">
+            <h2 class="form-title">PENGAJUAN ORDER BARANG</h2>
+            
+            <div class="input-group-grid">
+                <div class="input-box">
+                    <label>Nama Supplier</label>
+                    <input type="text" id="supplier" placeholder="Contoh: PT. Semen Gresik">
+                </div>
+                <div class="input-box">
+                    <label>Tanggal</label>
+                    <input type="date" id="tanggal">
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div id="order-items">
+                <div class="item-row header-row">
+                    <span>Nama Barang</span>
+                    <span>Qty</span>
+                    <span>Kemasan</span>
+                    <span>Harga Satuan</span>
+                </div>
+                </div>
+
+            <button type="button" class="btn-secondary" onclick="addItem()">+ Tambah Barang</button>
+
+            <div class="footer-form">
+                <div class="total-section">
+                    <p>Total Item: <span id="total-item">0</span> pcs</p>
+                    <p>Grand Total: <strong>Rp <span id="grand-total">0</span></strong></p>
+                </div>
+                <button type="button" class="btn-primary" onclick="sendWhatsApp()">Kirim Laporan WhatsApp</button>
+            </div>
+        </section>
+
+        <footer class="creator-tag">
+            Created By. <strong>MW Prabowo (Aquarius.id)</strong>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
