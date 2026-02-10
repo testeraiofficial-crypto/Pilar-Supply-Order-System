@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order System - Minimarket Bangunan Pilar</title>
+    <title>Pilar Order System - Aquarius.id</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -20,7 +20,7 @@
             <div class="input-group-grid">
                 <div class="input-box">
                     <label>Nama Supplier</label>
-                    <input type="text" id="supplier" placeholder="Contoh: PT. Semen Gresik">
+                    <input type="text" id="supplier" placeholder="Masukkan nama supplier...">
                 </div>
                 <div class="input-box">
                     <label>Tanggal</label>
@@ -34,19 +34,23 @@
                 <div class="item-row header-row">
                     <span>Nama Barang</span>
                     <span>Qty</span>
-                    <span>Kemasan</span>
+                    <span>Satuan</span>
                     <span>Harga Satuan</span>
                 </div>
                 </div>
 
-            <button type="button" class="btn-secondary" onclick="addItem()">+ Tambah Barang</button>
+            <button type="button" class="btn-secondary" onclick="addItem()">+ Tambah Baris Barang</button>
 
             <div class="footer-form">
-                <div class="total-section">
-                    <p>Total Item: <span id="total-item">0</span> pcs</p>
-                    <p>Grand Total: <strong>Rp <span id="grand-total">0</span></strong></p>
+                <div class="summary-box">
+                    <p>Grand Total Item: <span id="total-item">0</span> pcs</p>
+                    <p>Grand Total Nilai: <strong>Rp <span id="grand-total">0</span></strong></p>
                 </div>
-                <button type="button" class="btn-primary" onclick="sendWhatsApp()">Kirim Laporan WhatsApp</button>
+                
+                <div class="action-buttons">
+                    <button type="button" class="btn-copy" onclick="generateReport('copy')">Salin Laporan</button>
+                    <button type="button" class="btn-primary" onclick="generateReport('whatsapp')">Kirim ke WhatsApp Group</button>
+                </div>
             </div>
         </section>
 
